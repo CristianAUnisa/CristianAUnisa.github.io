@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-2 py-lg-0">
   <div class="container">
-    <a class="navbar-brand" rel="author" href="{{ " /" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="navbar-brand d-none d-lg-block" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="navbar-brand d-print-none d-lg-none" rel="author" href="{{ "/" | relative_url }}">Cristian Alfano</a>
 
     {%- assign page_paths = site.header_pages -%}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -25,21 +26,14 @@
   </div>
 </nav>
 
-<div class="container mt-4">
+<div class="container mt-4 d-none d-lg-flex">
   <div class="col">
-    <div class="card">
-      <div class="card-body">
-        <a href="/">Home</a>
-        {% for crumb in crumbs offset: 1 %}
-        {% if forloop.last %}
-        / {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
-        {% else %}
-        / <a
-          href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{
-          crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
-        {% endif %}
-        {% endfor %}
-      </div>
-    </div>
+{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+<a href="/">Home</a>
+{% for crumb in crumbs offset: 1 %}
+  {% if forloop.last %}
+    / {{ page.title }}
+  {% endif %}
+{% endfor %}
   </div>
 </div>

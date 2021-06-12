@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "My first post!"
 ---
+## Welcome
 
-# Welcome
+**Hello world**, this is my first blog post.
 
-**Hello world**, this is my first Jekyll blog post.
+I'd like to publish articles regarding nice **Open Source apps** for **Android**, **Linux** and **Windows** I tried by hanging out on some communities. I hope you'll like them!
 
-I hope you like it!
+See you next time!<br/>
+Cristian Alfano

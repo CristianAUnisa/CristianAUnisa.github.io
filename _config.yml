@@ -31,7 +31,9 @@ plugins:
   - jekyll-sitemap
 
 # A list of the pages to display in the navigation bar
-header_pages: blog.html
+header_pages:
+  - blog.html
+  - joblist.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -44,3 +46,4 @@ exclude:
 
 collections:
   - jobs
+  - education

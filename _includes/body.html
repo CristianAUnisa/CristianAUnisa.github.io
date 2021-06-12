@@ -39,25 +39,10 @@
     <div class="row mb-4">
         <div class="col">
             <div class="card border h-100">
-                <h5 class="card-header"><i class="fas fa-blog"></i> My latest blog post</h5>
-                <div class="card-body">
-                    {% for post in site.posts limit:1 %}
-                    <h5 class="card-title">{{ post.title }}</h5>
-                    <p class="card-text">
-                        {{ post.content }}
-                    </p>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row mb-4">
-        <div class="col">
-            <div class="card border h-100">
-                <h5 class="card-header"><i class="fas fa-briefcase"></i> My work experience</h5>
+                <h5 class="card-header"><i class="fas fa-briefcase"></i> My current job</h5>
                 <ul class="list-group list-group-flush">
                     {% assign sorted = site.jobs | sort: 'priority' | reverse %}
-                    {% for job in sorted %}
+                    {% for job in sorted limit: 1 %}
                     <li class="list-group-item">
                         <h5>{{ job.title }}</h5>
                         <h6 class="mb-0">
@@ -78,6 +63,21 @@
                     </li>
                     {% endfor %}
                 </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col">
+            <div class="card border h-100">
+                <h5 class="card-header"><i class="fas fa-blog"></i> My latest blog post</h5>
+                <div class="card-body">
+                    {% for post in site.posts limit:1 %}
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <p class="card-text">
+                        {{ post.content }}
+                    </p>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

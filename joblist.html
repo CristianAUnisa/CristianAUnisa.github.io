@@ -1,0 +1,61 @@
+---
+layout: default
+title: My career
+---
+
+<div class="container">
+    <div class="row mb-4">
+        <div class="col">
+            <div class="card border h-100">
+                <h5 class="card-header"><i class="fas fa-briefcase"></i> My work experience</h5>
+                <ul class="list-group list-group-flush">
+                    {% assign sorted = site.jobs | sort: 'priority' | reverse %}
+                    {% for job in sorted %}
+                    <li class="list-group-item">
+                        <h5>{{ job.title }}</h5>
+                        <h6 class="mb-0">
+                            {% if job.companyLink %}
+                            <a href="{{ job.companyLink }}">{{ job.company }}</a>
+                            {% else %}
+                            {{ job.company }}
+                            {% endif %}
+                            {% if job.company2 %}
+                            and <a href="{{ job.company2Link }}">{{ job.company2 }}</a>
+                            {% endif %}
+                        </h6>
+
+                        <div class="text-secondary mb-1">{{ job.duration }}</div>
+                        <div>
+                            {{ job.content }}
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col">
+            <div class="card border h-100">
+                <h5 class="card-header"><i class="fas fa-university"></i> My education</h5>
+                <ul class="list-group list-group-flush">
+                    {% assign sorted = site.education | sort: "priority" %}
+                    {% for edu in sorted %}
+                    <li class="list-group-item">
+                        <h5>{{ edu.title }}</h5>
+                        <h6 class="mb-0">
+                            <a href="{{ edu.organizationLink }}">{{ edu.organization }}</a>
+                        </h6>
+
+                        <div class="text-secondary mb-1">{{ edu.duration }}</div>
+                        <div>
+                            {{ edu.content }}
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
