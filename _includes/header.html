@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0">
   <div class="container">
-    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="navbar-brand" rel="author" href="{{ " /" | relative_url }}">{{ site.title | escape }}</a>
 
     {%- assign page_paths = site.header_pages -%}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -10,17 +10,36 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title -%}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          </li>
-          {%- endif -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+        <li class="nav-item">
+          <a class="nav-link py-3" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        </li>
+        {%- endif -%}
         {% endfor -%}
         <li class="nav-item">
-          <a class="nav-link" href="{{ site.github.repository_url }}">Fork me on Github</a>
+          <a class="nav-link py-3" href="https://www.linkedin.com/in/cristian-alfano-07614412b/">My LinkedIn Profile</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<div class="container mt-4">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <a href="/">Home</a>
+        {% for crumb in crumbs offset: 1 %}
+        {% if forloop.last %}
+        / {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+        {% else %}
+        / <a
+          href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{
+          crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
