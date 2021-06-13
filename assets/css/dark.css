@@ -1,0 +1,269 @@
+body {
+    background: #181b21;
+    color: #d8d8d8
+}
+
+a {
+    color: #54a4ff
+}
+
+a:hover {
+    color: #ffc400
+}
+
+img {
+    filter: saturate(80%)
+}
+
+.alert a {
+    color: #88abd3
+}
+
+.bg-secondary, .btn-secondary, .badge-secondary {
+    background-color: #464f60 !important
+}
+
+.btn-secondary, .card-secondary .card-header {
+    border-color: #464f60 !important
+}
+
+.alert-secondary, .btn-secondary:hover {
+    color: #d8d8d8;
+    background-color: #303743;
+    border-color: #303743
+}
+
+.bg-primary, .btn-primary, .badge-primary {
+    background-color: #6610f2 !important
+}
+
+.btn-primary, .card-primary .card-header {
+    border-color: #6610f2 !important
+}
+
+.text-primary {
+    color: #54a4ff !important
+}
+
+.text-secondary {
+    color: #959595 !important;
+}
+
+.alert-primary, .btn-primary:hover {
+    color: #d8d8d8;
+    background-color: #264569;
+    border-color: #264569
+}
+
+.bg-warning, .btn-warning, .badge-warning {
+    background-color: #c6a339 !important
+}
+
+.btn-warning, .card-warning .card-header {
+    border-color: #c6a339 !important
+}
+
+.btn-warning:hover {
+    color: #343a46 !important
+}
+
+.text-warning {
+    color: #c6a339 !important
+}
+
+.card-warning>.text-dark {
+    color: #181b21 !important
+}
+
+.alert-warning a {
+    color: #2c4f78
+}
+
+.badge-warning a {
+    color: #345e8e
+}
+
+.alert-warning, .btn-warning:hover {
+    color: #181b21;
+    background-color: #a68930;
+    border-color: #a68930
+}
+
+.bg-info, .btn-info, .badge-info {
+    background-color: #218899 !important
+}
+
+.btn-info, .card-info .card-header {
+    border-color: #218899 !important
+}
+
+.text-info {
+    color: #218899 !important
+}
+
+.alert-info, .btn-info:hover {
+    color: #d8d8d8;
+    background-color: #18636f;
+    border-color: #18636f
+}
+
+.bg-success, .btn-success, .badge-success {
+    background-color: #2c7f40 !important
+}
+
+.btn-success, .card-success .card-header {
+    border-color: #2c7f40 !important
+}
+
+.text-success {
+    color: #2c7f40 !important
+}
+
+.alert-success, .btn-success {
+    color: #d8d8d8;
+    background-color: #1f592d;
+    border-color: #1f592d
+}
+
+.bg-danger, .btn-danger, .badge-danger {
+    background-color: #b63f4a !important
+}
+
+.btn-danger, .card-danger .card-header {
+    border-color: #b63f4a !important
+}
+
+.text-danger {
+    color: #b63f4a !important
+}
+
+.alert-danger, .btn-danger:hover {
+    color: #d8d8d8;
+    background-color: #90323b;
+    border-color: #90323b
+}
+
+.btn-tor {
+    background: #79518d
+}
+
+.btn-tor:hover {
+    background: #6f3e87
+}
+
+.card {
+    box-shadow: none !important
+}
+
+.dropdown-item:hover {
+    color: #d8d8d8;
+    background-color: #22262e
+}
+
+.form-control, .form-control:focus {
+    color: #d8d8d8;
+    background: #22262e;
+    border-color: #22262e
+}
+
+.form-control[readonly], .form-control:disabled {
+    background: #22262e
+}
+
+.card, .jumbotron, .list-group-item, ol.breadcrumb {
+    background: #22262e
+}
+
+.blockquote {
+    border-color: #22262e
+}
+
+.bg-dark {
+    background-color: #22262e !important
+}
+
+.dropdown-item {
+    color: #d8d8d8
+}
+
+.list-group-item {
+    border-color: #343a46
+}
+
+.text-dark {
+    color: #d8d8d8 !important
+}
+
+table[data-sortable].sortable-theme-bootstrap {
+    color: #d8d8d8;
+    background-color: #22262e
+}
+
+table[data-sortable].sortable-theme-bootstrap th, table[data-sortable].sortable-theme-bootstrap td {
+    border-color: #464f60 !important
+}
+
+table[data-sortable].sortable-theme-bootstrap th[data-sorted="true"] {
+    color: #d8d8d8;
+    background: #343a46
+}
+
+table[data-sortable].sortable-theme-bootstrap th[data-sorted="true"][data-sorted-direction="ascending"]::after {
+    border-bottom-color: #d8d8d8
+}
+
+table[data-sortable].sortable-theme-bootstrap th[data-sorted="true"][data-sorted-direction="descending"]::after {
+    border-top-color: #d8d8d8
+}
+
+.nav-dropdown {
+    color: #d8d8d8;
+    background-color: #181b21;
+    border-color: #22262e
+}
+
+.nav-theme-icon:before {
+    color: #c6a339;
+    font-size: 1em;
+    content: "\f185"
+}
+
+.twitter {
+    background: #6ca9d7
+}
+
+.mastodon {
+    background: #4f86b5
+}
+
+.facebook {
+    background: #55627e
+}
+
+.mix {
+    background: #e48541
+}
+
+.reddit {
+    background: #df6120
+}
+
+.linkedin {
+    background: #687a95
+}
+
+.email {
+    background: #444
+}
+
+.diaspora {
+    background: #333
+}
+
+.footer {
+    background-color: #22262e !important;
+}
+
+.card-header {
+    background-color: rgba(255, 255, 255, 0.10);
+}

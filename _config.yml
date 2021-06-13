@@ -31,6 +31,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-multiple-languages-plugin
 
 # A list of the pages to display in the navigation bar
 header_pages:
@@ -49,3 +50,7 @@ exclude:
 collections:
   - jobs
   - education
+
+languages: ["en", "it"]
+
+exclude_from_localizations: ["assets"]
