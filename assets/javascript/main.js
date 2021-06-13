@@ -7,7 +7,6 @@ else if (localStorage.getItem("colorScheme") === "light") {
 
 // Dark/Light color scheme switch button
 function changeColorScheme() {
-  $("#icon-theme").toggleClass("fa-sun fa-moon");
   // Use whatever users want
   if (localStorage.getItem("colorScheme") === "dark") {
     // Change to light theme

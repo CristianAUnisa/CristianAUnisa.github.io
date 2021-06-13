@@ -7,8 +7,8 @@ a {
     color: #54a4ff
 }
 
-a:hover {
-    color: #ffc400
+a:hover, a:focus {
+    color: #ffc400 !important;
 }
 
 img {
@@ -266,4 +266,16 @@ table[data-sortable].sortable-theme-bootstrap th[data-sorted="true"][data-sorted
 
 .card-header {
     background-color: rgba(255, 255, 255, 0.10);
+}
+
+.nav-theme-icon:before {
+    font-size: 1em;
+    content: "\f185";
+    color: #ffc400;
+}
+
+:focus-visible, :focus {
+    outline-offset: 2px;
+    outline: 0.2em solid;
+    color: white;
 }

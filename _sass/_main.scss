@@ -31,3 +31,9 @@ body {
 .fa-rss-square {
     color: $orange;
 }
+
+.nav-theme-icon:before {
+    font-size: 0.875em;
+    content: "\f186";
+    color: white;
+  }
