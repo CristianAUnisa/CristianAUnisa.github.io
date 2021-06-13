@@ -1,6 +1,11 @@
-// Dark/Light color scheme switch button
-document.querySelector("#nav-switch-theme").addEventListener("click", changeColorScheme);
+if (localStorage.getItem("colorScheme") === "dark") {
+  document.querySelector("#dark-css").removeAttribute("media"); // Set dark theme
+}
+else if (localStorage.getItem("colorScheme") === "light") {
+  document.querySelector("#dark-css").setAttribute("media", "invalid"); // Set light theme
+}
 
+// Dark/Light color scheme switch button
 function changeColorScheme() {
   $("#icon-theme").toggleClass("fa-sun fa-moon");
   // Use whatever users want
