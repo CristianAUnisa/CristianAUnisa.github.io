@@ -10,7 +10,13 @@ permalink: /blog/
   <div class="row mb-4">
     <div class="col">
       <div class="card border h-100">
-        <h5 class="card-header"><i class="fas fa-blog"></i> <a href="{{ post.url }}">{{ post.title }}</a></h5>
+        <h5 class="card-header">
+          <i class="fas fa-blog"></i> <a href="{{ post.url }}">{{ post.title }}</a>
+          <time style="float: right;" datetime="{{ post.date | date_to_xmlschema }}">
+            {%- assign date_format = "%b %-d, %Y" -%}
+            {{ post.date | date: date_format }}
+          </time> 
+        </h5>
         <div class="card-body">
           <p class="card-text">
             {{ post.excerpt }}

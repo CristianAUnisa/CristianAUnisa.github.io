@@ -31,7 +31,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-multiple-languages-plugin
 
 # A list of the pages to display in the navigation bar
 header_pages:
