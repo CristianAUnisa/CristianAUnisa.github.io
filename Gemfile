@@ -18,5 +18,3 @@ gem "github-pages", group: :jekyll_plugins
 gem 'font-awesome-sass', '~> 5.15.1'
 
 gem 'jekyll-seo-tag'
-
-gem 'jekyll-multiple-languages-plugin'

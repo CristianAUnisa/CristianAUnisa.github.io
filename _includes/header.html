@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-2 py-lg-0">
   <div class="container">
-    <a class="navbar-brand d-none d-lg-block" rel="author" href="{{ " /" | relative_url }}">{{ site.title | escape
+    <a class="navbar-brand d-none d-lg-block" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape
       }}</a>
-    <a class="navbar-brand d-print-none d-lg-none" rel="author" href="{{ " /" | relative_url }}"><strong>Cristian
+    <a class="navbar-brand d-print-none d-lg-none" rel="author" href="{{ "/" | relative_url }}"><strong>Cristian
         Alfano</strong></a>
 
     {%- assign page_paths = site.header_pages -%}
@@ -38,6 +38,9 @@
   <div class="col">
     {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
     <a href="/">Home</a>
+    {% if page.path contains "_posts" %}
+    / <a href="/blog.html">Blog</a> 
+    {% endif %}
     {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
     / {{ page.title }}
