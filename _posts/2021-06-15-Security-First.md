@@ -6,7 +6,7 @@ permalink: /blog/Security_First
 ---
 ## Aegis and BitWarden are two amazing choices to protect your accounts
 
-<img src="/assets/img/security.png" class="img-fluid" style="max-width: 800px; margin: 2em 0;"/>
+<img src="/assets/img/security.png" class="img-fluid" style="margin: 2em 0;"/>
 
 **Hello everyone**,
 
