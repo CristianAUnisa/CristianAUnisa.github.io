@@ -24,7 +24,7 @@
           <a class="nav-link py-3" href="https://www.linkedin.com/in/cristian-alfano-07614412b/">My LinkedIn Profile</a>
         </li>
         <li class="nav-item">
-          <span id="nav-switch-theme" onclick="changeColorScheme()" class="nav-link py-3">
+          <span id="nav-switch-theme" role="button" tabindex="0" onKeyDown="handleBtnKeyDown(event)" onclick="changeColorScheme(event)" class="nav-link py-3">
             <span class="nav-theme-icon fas"></span>
             <span class="d-lg-none">Toggle Theme</span>
           </span>

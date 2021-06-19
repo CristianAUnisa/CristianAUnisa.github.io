@@ -2,35 +2,29 @@
 layout: default
 ---
 <div class="container">
-  <div class="row mb-4">
+  <div class="row my-4">
     <div class="col">
-      <div class="card border h-100">
-        <section>
-          <article>
-            <header>
-              <h5 class="card-header"><i class="fas fa-blog"></i> {{ page.title }}</h5>
-            </header>
-            <div class="card-body">
-              <header>
-                <h5 class="card-title">{{ post.title }}</h5>
-                <h6 class="card-subtitle">
-                  <time datetime="{{ page.date | date_to_xmlschema }}">
-                    {%- assign date_format = "%b %-d, %Y" -%}
-                    {{ page.date | date: date_format }}
-                  </time>
-                  {%- if page.author -%}
-                  • {{ page.author }}
-                  {%- endif -%}
-                </h6>
-              </header>
-              <p class="card-text">
-              <section>
-                {{ content }}
-              </section>
-              </p>
-            </article>
+      <section>
+        <article>
+          <header>
+            <h1>{{ page.title }}</h1>
+            <h2 class="h4">
+              <time datetime="{{ page.date | date_to_xmlschema }}">
+                {%- assign date_format = "%b %-d, %Y" -%}
+                {{ page.date | date: date_format }}
+              </time>
+              {%- if page.author -%}
+              • {{ page.author }}
+              {%- endif -%}
+            </h2>
+          </header>
+          <p>
+          <section>
+            {{ content }}
           </section>
-      </div>
+          </p>
+        </article>
+      </section>
     </div>
   </div>
 </div>

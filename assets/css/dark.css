@@ -11,6 +11,10 @@ a:hover, a:focus {
     color: #ffc400 !important;
 }
 
+a.btn:focus {
+    border: 2px solid #ffc400 !important;
+}
+
 img {
     filter: saturate(80%)
 }

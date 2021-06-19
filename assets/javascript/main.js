@@ -44,10 +44,18 @@ function changeColorScheme() {
   fixThemeImages();
 }
 
+function handleBtnKeyDown(event) {
+  // Check to see if space or enter were pressed
+  if (event.key === " " || event.key === "Enter" || event.key === "Spacebar") { // "Spacebar" for IE11 support
+    // Prevent the default action to stop scrolling when space is pressed
+    event.preventDefault();
+    changeColorScheme();
+  }
+}
 
 // Fix images in dark theme
 function fixThemeImages() {
-  document.querySelectorAll('[data-theme-src]').forEach(function(image) {
+  document.querySelectorAll('[data-theme-src]').forEach(function (image) {
     tempSrc = image.src;
     image.src = image.getAttribute("data-theme-src");
     image.setAttribute("data-theme-src", tempSrc);

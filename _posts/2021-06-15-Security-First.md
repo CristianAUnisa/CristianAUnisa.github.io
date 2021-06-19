@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "About Security"
+title: "Aegis and BitWarden are two amazing choices to protect your accounts"
 image: /assets/img/security.png
 permalink: /blog/Security_First
 ---
-## Aegis and BitWarden are two amazing choices to protect your accounts
-
 <figure>
-    <img src="/assets/img/security.png" class="img-fluid" style="margin: 2em 0;"/>
+    <img src="/assets/img/security.png" alt="A smartphone with an image of a lock present on screen" class="img-fluid" style="margin: 2em 0;"/>
 </figure>
 
 **Hello everyone**,

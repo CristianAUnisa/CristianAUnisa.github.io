@@ -3,8 +3,6 @@ layout: post
 title:  "My first post!"
 permalink: /blog/Hello_World
 ---
-## Welcome
-
 **Hello world**, this is my first blog post.
 
 I'd like to publish articles regarding nice **Open Source apps** for **Android**, **Linux** and **Windows** I tried by hanging out on some communities. I hope you'll like them!
