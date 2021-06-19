@@ -1,3 +1,10 @@
+@media print {
+    header,
+    footer {
+        display: none;
+    }
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
@@ -8,23 +15,26 @@
 }
 
 .card {
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 body {
-    background-color: #F0F2F5;
+    background-color: #f0f2f5;
+    padding-top: 4.5rem;
 }
 
 .footer {
     background-color: white;
 }
 
-:focus-visible, :focus {
+:focus-visible,
+:focus {
     outline-offset: 2px;
     outline: 0.2em solid;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
     color: white;
 }
 
@@ -36,4 +46,4 @@ body {
     font-size: 0.875em;
     content: "\f186";
     color: white;
-  }
+}

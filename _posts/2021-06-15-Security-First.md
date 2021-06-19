@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "My first post!"
+title: "About Security"
 image: /assets/img/security.png
 permalink: /blog/Security_First
 ---
 ## Aegis and BitWarden are two amazing choices to protect your accounts
 
-<img src="/assets/img/security.png" class="img-fluid" style="margin: 2em 0;"/>
+<figure>
+    <img src="/assets/img/security.png" class="img-fluid" style="margin: 2em 0;"/>
+</figure>
 
 **Hello everyone**,
 

@@ -7,7 +7,9 @@ layout: default
       <div class="card border h-100">
         <section>
           <article>
-            <h5 class="card-header"><i class="fas fa-blog"></i> My latest blog post</h5>
+            <header>
+              <h5 class="card-header"><i class="fas fa-blog"></i> {{ page.title }}</h5>
+            </header>
             <div class="card-body">
               <header>
                 <h5 class="card-title">{{ post.title }}</h5>
@@ -26,8 +28,8 @@ layout: default
                 {{ content }}
               </section>
               </p>
-          </article>
-        </section>
+            </article>
+          </section>
       </div>
     </div>
   </div>
