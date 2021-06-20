@@ -1,18 +1,7 @@
 
-# Boostrap 4 Github Pages
+# Cristian Alfano's Personal Website
 
-A [Bootstrap 4](https://getbootstrap.com/) template project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
-
-* A full Bootstrap 4 theme usable both on Github Pages and with a standalone Jekyll.
-* Recompiles Bootstrap from SCSS files, which allows to customize Bootstrap's variables and use Bootstrap themes.
-* Full support of Bootstrap's JavaScript plugins.
-* Supports all features of Github Pages and Jekyll.
-
-[See the website for demonstration and documentation](https://nicolas-van.github.io/bootstrap-4-github-pages/).
-
-## Contribution
-
-[See the contribution guide.](./CONTRIBUTING.md)
+A [personal website made for fun](https://cristianalfano.me/), based on the template repo you can find there: [Link to the documentation](https://nicolas-van.github.io/bootstrap-4-github-pages/).
 
 ## License
 
