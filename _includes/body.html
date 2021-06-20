@@ -73,17 +73,17 @@
     </div>
     <div class="row mb-4">
         <div class="col">
+            {% for post in site.posts limit:1 %}
             <div class="card border h-100">
-                <h5 class="card-header"><i class="fas fa-blog"></i> My latest blog post</h5>
+                <h5 class="card-header"><i class="fas fa-blog"></i> <a href="{{ post.url }}">My latest blog post</a></h5>
                 <div class="card-body">
-                    {% for post in site.posts limit:1 %}
                     <h5 class="card-title">{{ post.title }}</h5>
                     <p class="card-text">
                         {{ post.content }}
                     </p>
-                    {% endfor %}
                 </div>
             </div>
+            {% endfor %}
         </div>
     </div>
 </div>
