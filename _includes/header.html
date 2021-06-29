@@ -1,8 +1,8 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary py-2 py-lg-0">
   <div class="container">
-    <a class="navbar-brand d-none d-lg-block" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape
+    <a class="navbar-brand d-none d-lg-block" rel="author" href="{{ " /" | relative_url }}">{{ site.title | escape
       }}</a>
-    <a class="navbar-brand d-print-none d-lg-none" rel="author" href="{{ "/" | relative_url }}"><strong>Cristian
+    <a class="navbar-brand d-print-none d-lg-none" rel="author" href="{{ " /" | relative_url }}"><strong>Cristian
         Alfano</strong></a>
 
     {%- assign page_paths = site.header_pages -%}
@@ -24,10 +24,11 @@
           <a class="nav-link py-3" href="https://www.linkedin.com/in/cristian-alfano-07614412b/">My LinkedIn Profile</a>
         </li>
         <li class="nav-item">
-          <span id="nav-switch-theme" role="button" tabindex="0" onKeyDown="handleBtnKeyDown(event)" onclick="changeColorScheme(event)" class="nav-link py-3">
-            <span class="nav-theme-icon fas"></span>
-</span>
-<label for="nav-switch-theme" class="d-lg-none">Toggle Theme</label> 
+          <span id="nav-switch-theme" role="button" tabindex="0" onKeyDown="handleBtnKeyDown(event)"
+            onclick="changeColorScheme(event)" class="nav-link py-3">
+            <span class="nav-theme-icon fas"> </span>
+            <label for="nav-switch-theme" class="d-lg-none">Toggle Theme</label>
+          </span>
         </li>
       </ul>
     </div>
@@ -39,7 +40,7 @@
     {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
     <a href="/">Home</a>
     {% if page.path contains "_posts" %}
-    / <a href="/blog">Blog</a> 
+    / <a href="/blog">Blog</a>
     {% endif %}
     {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
