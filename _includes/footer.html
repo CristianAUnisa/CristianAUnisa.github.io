@@ -1,11 +1,10 @@
 <footer class="py-5 footer border-top">
   <div class="container">
 
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
-
     <div class="row">
 
       <div class="col-sm">
+        <p class="h5 mb-3">{{ site.title | escape }}</p>
         <ul class="list-unstyled">
           <li>
             {%- if site.author -%}
@@ -28,7 +27,14 @@
       </div>
 
 
-      <div class="col-sm text-right">
+      <div class="col-sm text-sm-right">
+        <p>
+          <a href="https://simpleanalytics.com/?utm_source=cristianalfano.me&utm_content=badge" referrerpolicy="origin"
+            target="_blank">
+            <img src="{{ "/assets/img/simpleanalyticsbadge.svg" | relative_url }}" loading="lazy"
+              referrerpolicy="no-referrer" crossorigin="anonymous" alt="Badge for SimpleAnalytics" />
+          </a>
+        </p>
         <p>{{- site.description | escape -}}</p>
 
         <p>
