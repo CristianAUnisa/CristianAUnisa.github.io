@@ -5,7 +5,7 @@ company: Energent
 companyLink: https://www.energent.it/
 company2: Accenture
 company2Link: https://www.accenture.com
-duration: April 2021 - Current
+duration: April 2021 - December 2021
 priority: 3
 ---
 
