@@ -1,89 +1,104 @@
 <div class="container">
-    <div class="row mb-4">
-        <div class="col">
-            <h1>Welcome to my personal website!</h1>
-        </div>
+  <div class="row mb-4">
+    <div class="col">
+      <h1>Welcome to my personal website!</h1>
     </div>
-    <div class="row mb-4">
-        <div class="col col-lg-8 col-12 mb-2 mb-lg-0">
-            <div class="card border h-100">
-                <h5 class="card-header"><i class="fas fa-user"></i> About me</h5>
-                <div class="card-body">
-                    <h5 class="card-title">Energent employee, currently working as a Web Developer
-                        through the ServiceNow Platform, and UniSa student.</h5>
-                    <p class="card-text">
-                        Currently learning about Web Accessibility and implementing it on the front-end side.
-                        I usually work both on back-end and front-end side of portals I'm involved, improving my
-                        experience with Bootstrap and AngularJS.
-                        While not working or studying, I enjoy tinkering with GNU/Linux systems and trying new ones,
-                        especially through virtual machines.
-                        I'm an open-source enthusiast and I like to promote privacy-respecting apps and alternatives to
-                        major services.
-                    </p>
-                </div>
-            </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col col-lg-8 col-12 mb-2 mb-lg-0">
+      <div class="card border h-100">
+        <h5 class="card-header"><i class="fas fa-user"></i> About me</h5>
+        <div class="card-body">
+          <h5 class="card-title">
+            celano employee, currently working as a Software Developer and
+            UniSa student.
+          </h5>
+          <p class="card-text">
+            Currently learning about Angular and front-end development. I usually work both on back-end and front-end
+            side of softwares I'm involved with. While not working or studying, I enjoy tinkering with
+            GNU/Linux systems and trying new ones, especially through virtual
+            machines. I'm an open-source enthusiast and I like to promote
+            privacy-respecting apps and alternatives to major services.
+          </p>
         </div>
-        <div class="col col-lg-4 col-12">
-            <div class="card border h-100">
-                <h5 class="card-header"><i class="fas fa-info-circle"></i> Info</h5>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="mailto:c.alfano@outlook.it" class="card-link"><i
-                                class="fas fa-envelope"></i> Send me an email!</a></li>
-                    <li class="list-group-item"><a href="https://www.linkedin.com/in/cristian-alfano-07614412b/"
-                            class="card-link"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                    <li class="list-group-item"><a href="https://github.com/CristianAUnisa" class="card-link"><i
-                                class="fab fa-github-square"></i> Github</a></li>
-                    <li class="list-group-item"><a href="https://codeberg.org/odavo32nof" class="card-link"><i
-                                class="fas fa-code"></i> Codeberg</a></li>
-                    <li class="list-group-item"><a href="https://crowdin.com/profile/cal332" class="card-link"><i
-                                class="fas fa-language"></i> Crowdin</a></li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </div>
-    <div class="row mb-4">
-        <div class="col">
-            <div class="card border h-100">
-                <h5 class="card-header"><i class="fas fa-briefcase"></i> My current job</h5>
-                <ul class="list-group list-group-flush">
-                    {% assign sorted = site.jobs | sort: 'priority' | reverse %}
-                    {% for job in sorted limit: 1 %}
-                    <li class="list-group-item">
-                        <h5>{{ job.title }}</h5>
-                        <h6 class="mb-0">
-                            {% if job.companyLink %}
-                            <a href="{{ job.companyLink }}">{{ job.company }}</a>
-                            {% else %}
-                            {{ job.company }}
-                            {% endif %}
-                            {% if job.company2 %}
-                            and <a href="{{ job.company2Link }}">{{ job.company2 }}</a>
-                            {% endif %}
-                        </h6>
+    <div class="col col-lg-4 col-12">
+      <div class="card border h-100">
+        <h5 class="card-header"><i class="fas fa-info-circle"></i> Info</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <a href="mailto:c.alfano@outlook.it" class="card-link"
+              ><i class="fas fa-envelope"></i> Send me an email!</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href="https://www.linkedin.com/in/cristian-alfano-07614412b/"
+              class="card-link"
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="https://github.com/CristianAUnisa" class="card-link"
+              ><i class="fab fa-github-square"></i> Github</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="https://codeberg.org/odavo32nof" class="card-link"
+              ><i class="fas fa-code"></i> Codeberg</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="https://crowdin.com/profile/cal332" class="card-link"
+              ><i class="fas fa-language"></i> Crowdin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col">
+      <div class="card border h-100">
+        <h5 class="card-header">
+          <i class="fas fa-briefcase"></i> My current job
+        </h5>
+        <ul class="list-group list-group-flush">
+          {% assign sorted = site.jobs | sort: 'priority' | reverse %} {% for
+          job in sorted limit: 1 %}
+          <li class="list-group-item">
+            <h5>{{ job.title }}</h5>
+            <h6 class="mb-0">
+              {% if job.companyLink %}
+              <a href="{{ job.companyLink }}">{{ job.company }}</a>
+              {% else %} {{ job.company }} {% endif %} {% if job.company2 %} and
+              <a href="{{ job.company2Link }}">{{ job.company2 }}</a>
+              {% endif %}
+            </h6>
 
-                        <div class="text-secondary mb-1">{{ job.duration }}</div>
-                        <div>
-                            {{ job.content }}
-                        </div>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
+            <div class="text-secondary mb-1">{{ job.duration }}</div>
+            <div>{{ job.content }}</div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
-    <div class="row mb-4">
-        <div class="col">
-            {% for post in site.posts limit:1 %}
-            <div class="card border h-100">
-                <h5 class="card-header"><i class="fas fa-blog"></i> <a href="{{ post.url }}">My latest blog post</a></h5>
-                <div class="card-body">
-                    <h5 class="card-title">{{ post.title }}</h5>
-                    <p class="card-text">
-                        {{ post.content }}
-                    </p>
-                </div>
-            </div>
-            {% endfor %}
+  </div>
+  <div class="row mb-4">
+    <div class="col">
+      {% for post in site.posts limit:1 %}
+      <div class="card border h-100">
+        <h5 class="card-header">
+          <i class="fas fa-blog"></i>
+          <a href="{{ post.url }}">My latest blog post</a>
+        </h5>
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text">{{ post.content }}</p>
         </div>
+      </div>
+      {% endfor %}
     </div>
+  </div>
 </div>
