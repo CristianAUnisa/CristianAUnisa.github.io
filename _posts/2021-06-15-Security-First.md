@@ -5,7 +5,10 @@ image: /assets/img/security.png
 permalink: /blog/Security_First
 ---
 <figure>
-    <img src="/assets/img/security.png" alt="A smartphone with an image of a lock present on screen" class="img-fluid" style="margin: 2em 0;"/>
+    <picture>
+        <source srcset="/assets/img/security.webp" alt="A smartphone with an image of a lock present on screen" class="img-fluid" style="margin: 2em 0;" type="image/webp">
+        <img src="/assets/img/security.png" alt="A smartphone with an image of a lock present on screen" class="img-fluid" style="margin: 2em 0;" type="image/png"/>
+    </picture>
 </figure>
 
 **Hello everyone**,
